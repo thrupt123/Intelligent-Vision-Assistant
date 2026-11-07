@@ -1,1 +1,17 @@
 
+Step 1.3: In Your Project Report
+
+Start your report document (in Microsoft Word or a text editor) with the opening details:
+• Project Title: Intelligent Vision Assistant System for Visually Impaired Users Using Machine Learning.
+• Objective: To build an interactive, real-time application that utilizes low-latency object detection models to provide spatial awareness through audio cues.
+• Target Audience: Visually impaired individuals seeking independent navigation.
+
+
+
+
+Step 2.3: In Your Project Report
+
+Add the System Design & Implementation chapter to your report:
+• Software Architecture: Explain that the system is split into three main modules: Data Acquisition (webcam stream handling), Core Processing (YOLOv4-Tiny object filtering), and Haptic/Audio Translation (threading engine for text-to-speech output).
+• Algorithmic Logic: Detail the mathematical division of the frame canvas (Width divided into three equal segments representing Left, Center, and Right) to dynamically map relative positions.
+
