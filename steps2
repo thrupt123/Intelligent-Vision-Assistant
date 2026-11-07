@@ -1,0 +1,61 @@
+
+ PHASE 3: Testing & Uploading Code to Production
+
+
+💻 Step 3.1: On Your Laptop
+
+1. Click your folder's top address bar window, type cmd, and press Enter to launch your terminal.
+2. Install the modules onto your laptop by typing:
+pip install opencv-python numpy pyttsx3
+
+pip install opencv-python numpy pyttsx3
+python src/main.py
+1. Verify your camera stream window opens and speaks when objects are shown. Press q to close it down.
+
+🌐 Step 3.2: On GitHub
+
+1. On your repository home page, click Add file -> Upload files.
+2. Drag and drop your src folder (main.py, detector.py, text_to_speech.py) directly from your desktop into the web browser dashboard window.
+3. Note: Do not upload the large .weights file, as GitHub blocks files over 100MB.
+4. Type Upload application source code files in the commit description box at the bottom and click Commit changes.
+
+📝 Step 3.3: In Your Project Report
+
+Add the Testing, Results, and Verification chapter to your report:
+• System Testing: Outline your validation workflow (e.g., verifying bounding box precision by testing structural targets like chairs, laptops, and human movements).
+• Performance Analysis: Note that using the lightweight YOLOv4-Tiny variant helps achieve steady 30+ Frames Per Second (FPS) on consumer laptops without needing high-end, dedicated graphics hardware (GPUs).
+
+
+
+📝 PHASE 4: Finalizing the Repository Layout & Documentation
+
+
+💻 Step 4.1: On Your Laptop
+
+Ensure your root project directory remains clean, with your code assets resting neatly in the src folder and your local neural network files tucked away safely inside the model folder.
+
+🌐 Step 4.2: On GitHub
+
+1. Open the README.md file on your GitHub page and click the ✏️ (Pencil) icon to edit it.
+2. Clear out the placeholder text and paste this clean, reader-friendly overview layout:
+
+# Intelligent Vision Assistant System for Visually Impaired
+An interactive, real-time computer vision project that senses environmental obstacles and translates tracking parameters into immediate spoken commands.
+
+## 📁 Project Architecture
+* `src/main.py`: Video capture stream orchestrator.
+* `src/detector.py`: Neural network processing and object filtering.
+* `src/text_to_speech.py`: Concurrent audio feedback manager.
+
+## 🚀 Setup Instructions
+1. Download repo assets.
+2. Place configuration weights inside the `model/` directory.
+3. Run `pip install -r requirements.txt`.
+4. Execute program tracking via `python src/main.py`.
+1. Save the updates by clicking Commit changes.
+
+📝 Step 4.3: In Your Project Report
+
+Wrap up the final chapters of your technical document:
+• Conclusion: This project shows how standard computer vision tools can be modified to provide high-speed, real-time support on basic computers.
+• Future Scope: Suggest expanding the system by adding depth-sensing camera setups for distance estimation, and integrating GPS modules for real-time outdoor navigation tracking.
